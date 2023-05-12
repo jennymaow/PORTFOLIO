@@ -3,8 +3,6 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <>
@@ -14,8 +12,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className={styles.main}>
-        <h1>Hello, I'm Jenny</h1>
+        <section className={styles.hero}>
+          <h1 className={styles.title}>Hello, I'm Jenny</h1>
+          <h3>Welcome to my world!</h3>
+          <Image
+            src="https://res.cloudinary.com/dnb4ujbgr/image/upload/v1675183507/jenny_gggwbm.jpg"
+            alt="Jenny avatar"
+            width={400}
+            height={400}
+            className={styles.avatar}
+          />
+        </section>
       </main>
     </>
   );

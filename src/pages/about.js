@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import styles from "../styles/Home.module.css";
 const About = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>about</div>
+      <div className={styles.main}>about</div>
     </>
   );
 };
